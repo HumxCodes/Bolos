@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+    /* Estilos CSS para a página */
+    body {
+        background: url('https://w.forfun.com/fetch/18/1891b7712d3e7ca05a7f8cb78bffc73c.jpeg') center center no-repeat;
+        background-size: cover;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        position: relative;
+    }
+
+    /* Estilos CSS para o contêiner do formulário */
+    .container {
+        display: flex;
+        flex-direction: column; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        position: relative;
+    }
+
+    /* Estilos CSS para o quadrado em volta do formulário */
+  .formulario {
+      border: 2px solid black; /* Adiciona uma borda preta de 2px ao redor do formulário */
+      padding: 20px;
+      width: 400px;
+      margin: 20px auto;
+      box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+      background-color: pink;
+      color: white;
+      position: relative;
+      z-index: 1;
+      border-radius: 10px; /* Borda arredondada para o formulário */
+  }
+
+    /* Estilos CSS para o formulário */
+    form {
+        color: pink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilos CSS para os campos de entrada (borda circular) */
+    input[type="text"], input[type="password"] {
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 20px; /* Borda arredondada para os campos */
+        margin: 5px;
+    }
+
+  /* Estilo para o botão de login */
+  .login-button {
+      background-color: white; /* Mudar a cor do botão */
+      color: black;
+      padding: 10px 20px;
+      border: 2px solid black; /* Adicione uma borda preta de 2px ao redor do botão */
+      cursor: pointer;
+      border-radius: 20px; /* Borda arredondada para o botão */
+  }
+
+    /* Estilos CSS para a imagem acima do campo "Nome" */
+    .image-above-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilos CSS para redimensionar a imagem acima do campo "Nome" */
+    .image-above-name img {
+        width: 75px; /* Define o tamanho da imagem */
+        height: 75px; /* Define a altura da imagem */
+    }
+
+    /* Estilos CSS para o rodapé */
+    #footer {
+        text-align: center;
+        background-color: ##FF007F;
+        padding: 10px;
+        font-size: 14px;
+    }

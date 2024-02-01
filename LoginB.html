@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LoginWQ</title>
+    <meta charset="UTF-8">
+   <link href="style login.css" rel="stylesheet" type="text/css">
+  <script src="script login.js"></script>
+</head>
+
+<body>
+    <img src="https://fc07.deviantart.net/fs70/f/2012/283/5/d/cake_by_barakaldo-d5hg1vu.gif">
+    <div class="container">
+        <div class="formulario">
+            <form action="https://093aa47f-9328-4456-b2d2-69061e7ae0f8-00-sbh9p08cuj22.kirk.replit.dev/" method="post"
+                onsubmit="return validateForm()">
+                <div class="image-above-name">
+                    <img src="https://cdn-icons-png.flaticon.com/512/17/17797.png">
+                </div>
+                <input type="text" id="nome" placeholder="Nome" size="35" maxlength="45" required><br><br>
+                <input type="password" id="senha" placeholder="Senha" size="35" maxlength="15"
+                    required pattern=".{6,}" title="A senha deve conter pelo menos 6 caracteres"><br>
+                <span id="passwordError" style="color: red;"></span>
+                <br>
+                <button class="login-button" type="submit">Fazer Login</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

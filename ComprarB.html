@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Wind Queen Bolos</title>
+   <link href="style comprar.css" rel="stylesheet" type="text/css">
+  <script src="script comprar.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="https://093aa47f-9328-4456-b2d2-69061e7ae0f8-00-sbh9p08cuj22.kirk.replit.dev/">
+      <button class="menu-button">&#9776;</button>
+    </a>
+    <div class="icons">
+      <a href="https://loginb.0000932164.repl.co/">
+        <img src="https://cdn-icons-png.flaticon.com/512/74/74472.png" alt="Usuário">
+      </a>
+    </div>
+  </header>
+
+  <div class="news-container">
+    <div class="carousel">
+      <div class="news-item">
+        <p class="cake-description" id="cakeDescription" style="text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);">Delicioso bolo de chocolate caseiro.</p>
+
+        <img src="https://bakeandcakegourmet.com.br/uploads/site/receitas/bolo-de-chocolate-facil-e-barato-rspxk8nc.jpg"
+          alt="Bolo de Chocolate" id="cakeImage">
+        <p class="cake-price" id="price" data-original-price="15.00" style="text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);">Preço: R$ 15,00</p>
+
+          <!-- Adicione o campo de seleção de bolo -->
+          <select id="cakeSelect" onchange="updateCakeInfo()">
+            <option value="chocolate" data-price="15.00">Bolo de Chocolate Caseiro</option>
+            <option value="morango" data-price="24.40">Bolo Nevado de Limão</option>
+            <option value="baunilha" data-price="147.00">Bolo de Chocolate com Frutas Vermelhas</option>
+          <option value="laranja" data-price="62.10">Bolo de Morango</option>
+          <option value="limao" data-price="21.92">Bolo de Churros</option>
+          <option value="coco" data-price="54.60">Bolo do Palmeiras</option>
+          <option value="amendoim" data-price="60.90">Bolo de Coco</option>
+        </select>
+
+        <!-- Adiciona o campo de entrada de quantidade e um identificador único (id) para ele -->
+        <input type="number" id="quantity" min="1" value="1" oninput="updatePrice()">
+
+          <!-- Atualiza o botão "Comprar" para verificar a quantidade antes de permitir a compra -->
+          <button class="buy-button" onclick="openPaymentModal()">Comprar🛒</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="paymentModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closePaymentModal()">&times;</span>
+      <h2>Escolha a forma de pagamento</h2>
+      <select id="paymentMethod">
+        <option value="creditCard">Cartão de Crédito💳</option>
+        <option value="paypal">PayPal💲</option>
+        <option value="bankTransfer">Transferência Bancária💰</option>
+      </select>
+      <a href="https://093aa47f-9328-4456-b2d2-69061e7ae0f8-00-sbh9p08cuj22.kirk.replit.dev/">
+        <button class="buy-button">Finalizar Compra✔️</button>
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html>

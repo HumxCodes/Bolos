@@ -1,0 +1,147 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+  /* Estilos para o corpo (body) */
+  body {
+    background-image: url('https://img.freepik.com/fotos-gratis/fundo-branco-das-texturas-da-parede-de-tijolo_1203-6589.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Estilos para o cabeçalho */
+  header {
+    background-color: #FF007F;
+    text-align: center;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header .icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  header .icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-button {
+    background: transparent;
+    border: none; /* Remove a borda */
+    cursor: pointer;
+  }
+
+  .menu-button a {
+    text-decoration: none; /* Remove o sublinhado */
+  }
+
+  .menu-button:hover {
+    color: #FF007F;
+  }
+
+  .menu-text {
+    color: black;
+    font-size: 24px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+  }
+
+  /* Estilos para a barra de pesquisa */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .search-button:hover {
+    background-color: #FF007F;
+  }
+
+  /* Estilos para o carrossel e os slides */
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 1s;
+  }
+
+  .slide {
+    min-width: 50%; /* Cada slide é 50% da largura do contêiner */
+    display: flex;
+  }
+
+  .slide img {
+    max-width: 100%; /* A imagem se ajusta à largura do slide */
+    max-height: 290px; /* Altura máxima das imagens */
+    height: auto; /* Altura ajustável */
+    border: 2px solid black;
+  }
+
+  /* Estilos para o logotipo */
+  .logo-container {
+    background-color: #FF007F;
+    text-align: center;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-container img {
+    max-height: 145px;
+  }
+
+  /* Estilos para o rodapé */
+  footer {
+    background-color: #FF007F;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
